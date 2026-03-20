@@ -1,0 +1,52 @@
+package p1;
+
+public class Emp
+{
+	int id;
+	String name;
+	double salary;
+
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	void display()
+	{
+		System.out.println("\nId is "+this.id);
+		System.out.println("Name is "+this.name);
+		System.out.println("Salary is "+this.salary);
+	}
+	public Emp()
+	{
+		this.id=100;
+		this.name="Unknown";
+		this.salary=0;
+	}
+	public Emp(int a,String s,double b)
+	{
+		this.id=a;
+		this.name=s;
+		this.salary=b;
+	}
+	public double calSal() {
+		 return salary;
+	 }
+	public String toString() {
+		return this.id+" "+this.name+" "+this.salary;
+	}
+		
+}//class Emp ends here
