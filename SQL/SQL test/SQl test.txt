@@ -1,0 +1,20 @@
+Name : Omkar Prakash Mankar
+Set : B
+
+Q1-> Select name from customers order by name asc;
+Q2-> Select * from products group by price order by price desc limit 10;
+Q3-> Select * from employees where salary<(select max(salary) from employees) order by salary desc limit 1;
+Q4-> Select count(*) as total_customer,city from customers group by city; 
+Q5-> Select count(salary),department from employees group by department having count(salary)>200000;
+Q6-> Select right(phone_number,4), left(customerName,3), from customers;
+Q7-> Select * from products where product_name is like "%Pro%";
+Q8-> Select count(*),course from students group by course having count(*)>=30;
+Q9-> Select count(*),month(order_date) from orders group by month(order_date);
+Q10-> Select max(salary),min(salary),department from employee group by department; 
+Q11-> a
+Q12-> a
+Q13-> a
+Q14-> b
+Q15-> b
+Q16-> Select o.customer_id,c.customer_name,avg(total_amount) as avg_order_value  from orders o inner join customer c on o.customer_id=c.customer_id group by customer_id having count(*)<2;
+Q17-> select s.product_id,p.product_name,count(*)as sales_count from sales s inner join products p on s.product_id=p.product_id group by product_id where count(*)>50; 
